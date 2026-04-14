@@ -12,7 +12,7 @@ mm_features = Features(
     problem=Value("string"),
     answer=Value("string"),
     images=List(Image(decode=True)),
-    _qid=Value("string"),
+    _qid=Value("int32"),
 )
 
 
