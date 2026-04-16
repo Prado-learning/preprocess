@@ -22,12 +22,10 @@ SAVE_PATH = "./pope_sharegpt"
 SEED      = 42
 
 
-def pil_to_bytes(img: PILImage.Image, fmt: str = "JPEG") -> bytes:
-    buf = io.BytesIO()
-    if img.mode not in ("RGB", "L"):
-        img = img.convert("RGB")
-    img.save(buf, format=fmt)
-    return buf.getvalue()
+
+
+
+
 
 
 def map_pope(e: dict, idx: int) -> dict:
